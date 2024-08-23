@@ -1,1 +1,2 @@
-print("graphics")
+from turtle import *
+t = Turtle()
