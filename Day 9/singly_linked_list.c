@@ -29,5 +29,6 @@ int main(){
         printf("%d -> ",temp -> data);
         temp = temp -> next;
     }
+    printf("NULL");
     return 0;
 }
