@@ -60,3 +60,27 @@ void msortdiv(int low, int high) {
     }
 }
 
+   insert = (struct node *)malloc(sizeof(struct node));
+    printf("\n Enter the element:-");
+
+    printf("\nEnter the data:-");
+    scanf("%d", &insert->data);
+    printf("Enter the position:-");
+    scanf("%d", &pos);
+        temp = head;
+    while (i < pos)
+    {
+        temp = temp->next;
+        i++;
+    }
+    insert->next = temp->next;
+    temp->next = insert;
+    printf("\n The Linked List:-");
+
+    temp = head;
+    while (temp != NULL)
+    {
+        printf("%d", temp->data);
+        temp = temp->next;
+        count++;
+    }
